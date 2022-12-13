@@ -1,0 +1,122 @@
+:root{
+    --lavender: #d5cad6;
+    --dpurple: #0D0628;
+    --nickel: #6c756b;
+    --seagreen: #58bc82;
+    --citrine: #ead637;
+    --tanCrayola: #DF9B6D;
+    --shadow: 0 1px 3px var(--dpurple);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: var(--lavender);
+}
+
+div.intro_div{
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+div.intro_div div#intro_divtext{
+    text-align: center;
+    padding: 5px 5px 5px 40px;
+    float: left;
+    max-width: 30%;
+}
+
+div.intro_div div#intro_divtext h2{
+    text-shadow: var(--shadow);
+}
+
+div.intro_div div#intro_divtext p.green_txt{
+    color: var(--seagreen);
+    background-color: var(--dpurple);
+    border-radius: 10px;
+}
+
+div.intro_div div#intro_divpic{
+    max-height: auto;
+    margin-right:33px;
+    margin-bottom: 40px;
+    padding: 7px 7px 7px 7px;
+    float: right;
+    background-color: var(--seagreen);
+    border-radius: 10px;
+}
+
+div.history{
+    clear:both;
+    padding-top: 30px;
+    border-top: #0D0628 dashed 3px;
+    border-bottom: #0D0628 dashed 3px;
+    padding-bottom: 25px;
+}
+
+div.history h2{
+    text-align: center;
+    color: var(--dpurple);
+    text-shadow: var(--shadow);
+}
+
+div.history p.yellow{
+    background-color: var(--citrine);
+    color: var(--dpurple);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+div.history p.gray{
+    background-color: var(--seagreen);
+    color: var(--dpurple);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+div.mywork{
+    padding-top: 30px;
+}
+
+div.mywork h2{
+    text-align: center;
+    color: var(--dpurple);
+    text-shadow: var(--shadow);
+}
+
+div.mywork div.flexbox{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+div.mywork div.flexbox div.finished{
+    flex-basis: 45%;
+    background-color: var(--dpurple);
+    color: var(--seagreen);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+div.mywork div.flexbox div.future{
+    align-self: flex-end;
+    flex-basis: 45%;
+    background-color: var(--dpurple);
+    color: var(--seagreen);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+
+
+
