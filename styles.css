@@ -67,7 +67,7 @@ div.history h2{
 }
 
 div.history p.yellow{
-    background-color: var(--citrine);
+    background-color: var(--nickel);
     color: var(--dpurple);
     border-radius: 10px;
     text-align: center;
@@ -128,6 +128,61 @@ div.mywork div.flexbox div.future{
     box-shadow: var(--shadow);
 }
 
+div.creative_samples{
+    display: flex;
+    flex-direction: column;
+    border-top: var(--dpurple) dashed 3px;
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+div.creative_samples h2{
+    text-align: center;
+    color: var(--dpurple);
+    text-shadow: var(--shadow);
+}
+
+div.creative_samples a{
+    background-color: var(--dpurple);
+    color: var(--seagreen);
+    text-decoration: none;
+    text-align: center;
+    padding: 2px 6px 2px 6px;
+    margin: auto;
+}
+
+div.creative_samples a:hover{
+    background-color: var(--seagreen);
+    color: var(--dpurple);
+    text-decoration: underline;
+}
+
+div.creative_samples img{
+    max-width: 450px;
+    max-height: auto;
+    background-color: var(--nickel);
+    border-radius: 10%;
+    padding: 10px 10px 10px 10px;
+}
+
+footer{
+    clear:both;
+    background-color: var(--citrine);
+    color: var(--dpurple);
+    opacity: 0.8;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--dpurple);
+}
+
+footer a:hover{
+    text-decoration: overline;
+    color: var(--nickel);
+}
 
 
 /*begin media queries*/
@@ -156,7 +211,7 @@ div.mywork div.flexbox div.future{
 @media screen and (min-width: 790px){
 
     div.intro_div div#intro_divtext{
-        padding-left: 90px;
+        margin-left: 90px;
     }
 
     div.intro_div div#intro_divpic{
@@ -167,7 +222,7 @@ div.mywork div.flexbox div.future{
         clear: both;
         display: flex;
         flex-direction: row;
-        border:var(--dpurple) dashed 3px;
+        border-top:var(--dpurple) dashed 3px;
     }
 
     div#flexbox_lrg div.history{
@@ -181,6 +236,68 @@ div.mywork div.flexbox div.future{
         margin: auto;
         border-left: var(--dpurple) dashed 3px;
     }
+
+    div.creative_samples{
+        border-bottom: var(--dpurple) dashed 3px;
+        
+    }
+
+    div.creative_samples div.cs_flexbox{
+        clear: both;
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.cs_flexbox img{
+        max-width: 350px;
+        max-height: auto;
+        margin: 10px 10px 10px 10px;
+    }
 }
 
+@media screen and (min-width: 950px){
 
+    div.intro_div div#intro_divtext{
+        margin-left: 110px;
+    }
+
+    div.intro_div div#intro_divpic{
+        margin-right: 140px;
+    }
+
+    div.cs_flexbox img{
+        max-width: 410px;
+        max-height: auto;
+        margin: 10px 10px 10px 10px;
+    }    
+}
+
+@media screen and (min-width: 1120px){
+    div.intro_div div#intro_divtext{
+        font-size: 1.5em;
+        margin-left: 110px;
+    }
+
+    div.intro_div div#intro_divpic{
+        margin-right: 140px;
+    }
+
+    div.intro_div div#intro_divpic img{
+        min-width: 250px;
+        min-height: auto;
+    }
+
+    div.cs_flexbox img{
+        max-width: 500px;
+        max-height: auto;
+        margin: 10px 10px 10px 10px;
+    }    
+}
+
+@media screen and (min-width: 1340px){
+    div.cs_flexbox img{
+        max-width: 600px;
+        max-height: auto;
+        margin: 10px 10px 10px 10px;
+    }    
+}
