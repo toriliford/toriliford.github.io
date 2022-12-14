@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: var(--lavender);
+    background-color: lightgrey;
 }
 
 div.intro_div{
@@ -33,6 +33,7 @@ div.intro_div div#intro_divtext{
 
 div.intro_div div#intro_divtext h2{
     text-shadow: var(--shadow);
+    color: var(--dpurple);
 }
 
 div.intro_div div#intro_divtext p.green_txt{
@@ -85,10 +86,19 @@ div.mywork{
     padding-top: 30px;
 }
 
+div.mywork ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
 div.mywork h2{
     text-align: center;
     color: var(--dpurple);
     text-shadow: var(--shadow);
+}
+
+div.mywork h4{
+    text-decoration: underline;
 }
 
 div.mywork div.flexbox{
@@ -107,6 +117,7 @@ div.mywork div.flexbox div.finished{
     box-shadow: var(--shadow);
 }
 
+
 div.mywork div.flexbox div.future{
     align-self: flex-end;
     flex-basis: 45%;
@@ -118,5 +129,58 @@ div.mywork div.flexbox div.future{
 }
 
 
+
+/*begin media queries*/
+
+
+@media screen and (min-width: 615px){
+
+    div.intro_div div#intro_divtext p{
+        font-size: 1.2em;
+    }
+
+    div.intro_div div#intro_divtext h2{
+        font-size: 2em;
+    }
+
+    div.intro_div div#intro_divpic{
+        margin-top: 40px;
+        transform: scale(1.2, 1.2);
+    }
+
+    div.history p{
+        margin: 0em 2em 0em 2em;
+    }
+}
+
+@media screen and (min-width: 790px){
+
+    div.intro_div div#intro_divtext{
+        padding-left: 90px;
+    }
+
+    div.intro_div div#intro_divpic{
+        margin-right: 90px;
+    }
+
+    div#flexbox_lrg{
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        border:var(--dpurple) dashed 3px;
+    }
+
+    div#flexbox_lrg div.history{
+        flex-basis: 60%;
+        border-style:hidden;
+    }
+
+    div#flexbox_lrg div.mywork{
+        flex-basis: 39%;
+        justify-self: center;
+        margin: auto;
+        border-left: var(--dpurple) dashed 3px;
+    }
+}
 
 
